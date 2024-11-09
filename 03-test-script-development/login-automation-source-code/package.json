@@ -1,0 +1,20 @@
+{
+    "name": "login-tests",
+    "version": "1.0.0",
+    "description": "Login functionality tests using Playwright",
+    "scripts": {
+        "test": "playwright test",
+        "test:headed": "playwright test --headed",
+        "test:debug": "playwright test --debug",
+        "test:ui": "playwright test --ui",
+        "test:dev": "TEST_ENV=dev playwright test",
+        "test:staging": "TEST_ENV=staging playwright test",
+        "test:prod": "TEST_ENV=prod playwright test",
+        "report": "playwright show-report",
+        "clean": "rimraf test-results"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.48.2",
+        "rimraf": "^5.0.0"
+    }
+}
